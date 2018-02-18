@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#fab21c">
+	<meta name="description" content="{$description}">
+	<meta name="author" content="{$author}">
+	<meta name="robots" content="{$robots}" n:ifset="$robots">
+	
+	<title>{ifset $title}{$title} - {/ifset}{$webName}</title>
+	
+	{*<link rel="shortcut icon" href="{$weburl}/favicon.ico">*}
+	<link rel="stylesheet" media="screen" href="{$weburl}/css/style.css">
+	{*<link rel="stylesheet" media="print" href="{$weburl}/print.css">*}
+	
+	<script src="{$weburl}/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="{$weburl}/js/booty.js"></script>
+	
+	{block #headTag}{/block}
+</head>
+
+<body>
+<header id="header" class="navbar navbar-default navbar-static-top navbar-inverse">
+	<div class="container-fluid">
+		{include $headerFile}
+	</div>
+</header>
+
+<article id="content">
+	<div class="container-fluid">
+		<div class="row">
+		{if $menuExists}
+			{var $cols = "col-sm-8 col-md-9 col-lg-10"}
+		{else}
+			{var $cols = ""}
+		{/if}
+		
+			<section class="col-xs-12 {$cols}">
+				{block #content}{/block}
+			</section>
+		
+		{if $menuExists}
+			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-print" id="menu">
+				{include $menuFile}
+			</aside>
+		{/if}
+		</div>
+	</div>
+</article>
+
+<footer id="footer">
+	<div class="container-fluid">
+		{include $footerFile}
+	</div>
+</footer>
+
+<script src="{$weburl}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
