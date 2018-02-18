@@ -1,0 +1,20 @@
+{
+	"name": "hermajan/booty",
+	"description": "",
+	"type": "library",
+	"license": "MIT",
+
+	"config": {
+		"vendor-dir": "vendor",
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"optimize-autoloader": true
+	},
+
+	"require": {
+		"php": "^7.0"
+	},
+	"require-dev": {
+		"latte/latte": "^2.4"
+	}
+}
