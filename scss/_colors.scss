@@ -1,0 +1,77 @@
+/* Navbar */
+.navbar-inverse {
+	background-color: $color-primary;
+	border-color: $color-primary;
+	
+	& .navbar-nav {
+		& > li > a {
+			color: $color-text-light;
+			
+			&:focus, &:hover {
+				background-color: $color-text-light;
+				color: $color-secondary;
+			}
+			
+			& > i {
+				color: inherit;
+			}
+		}
+		
+		& > .active > a {
+			background-color: $color-secondary;
+			
+			&:hover {
+				background-color: $color-text-light;
+				color: $color-secondary;
+			}
+		}
+	}
+}
+
+.navbar-brand {
+	color: $color-text-light!important;
+}
+
+
+/* Menu */
+#menu {
+	& .panel-heading {
+		border-color: $color-primary;
+		
+		&, & a {
+			background-color: $color-primary;
+			color: $color-text-light;
+		}
+		
+		&.active, &.active > h4 > a {
+			background-color: $color-secondary;
+		}
+		
+		& a:hover, &.active > h4 > a:hover {
+			background-color: $color-text-light;
+			color: $color-secondary;
+		}
+	}
+	
+	& .panel, & .nav > li > a {
+		border-color: $color-primary;
+	}
+	
+	& .panel-body {
+		& li.active > a {
+			background-color: $color-secondary;
+			color: $color-text-light;
+		}
+		
+		& a:hover, & li.active > a:hover {
+			background-color: $color-primary;
+			color: $color-text-light;
+		}
+	}
+}
+
+
+/* Footer */
+#footer {
+	background-color: $color-text-light;
+}

@@ -5,21 +5,23 @@ $latte = new \Latte\Engine;
 $latte->setTempDirectory(__DIR__."/../.temp");
 
 $parameters = [
-	"weburl" => "/github/booty",
-	"webName" => "Booty",
+	"basePath" => dirname($_SERVER["SCRIPT_NAME"])."/..",
 	
+	"webName" => "Booty",
+	"color" => "#b00071",
 	"description" => "",
 	"author" => "hermajan",
+	"robots" => "",
 	"title" => "Booty",
 	
-	"headerFile" => "_header.latte",
+	"headerFile" => "#header.latte",
 	"headTag" => "",
 	"searchForm" => "",
-
+	
 	"menuExists" => true,
-	"menuFile" => "_menu.latte",
-
-	"footerFile" => "_footer.latte",
+	"menuFile" => "#menu.latte",
+	
+	"footerFile" => "#footer.latte",
 	"footerContent" => ""
 ];
 

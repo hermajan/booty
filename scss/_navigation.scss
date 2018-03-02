@@ -1,0 +1,60 @@
+/* Navbar */
+.navbar {
+	min-height: $height-header;
+	margin-bottom: 0;
+	
+	.nav > li > a {
+		padding: 15px 10px;
+	}
+}
+
+.navbar-brand {
+	padding: 10px 15px;
+	
+	& > img {
+		display: inline;
+		
+		&.logo {
+			height: 32px;
+		}
+	}
+}
+
+
+/* Menu */
+#menu { 
+	padding: 10px 0 0 0;
+	
+	.nav {
+		max-width: 300px;
+		
+		& li a {
+			padding: 1rem;
+		}
+	}
+	
+	.nav-stacked > li+li {
+		margin-top: 0;
+	}
+	
+	ul.inside {
+		margin-left: 2rem;
+	}
+	
+	.panel-heading {
+		padding: 10px 0;
+		
+		& a {
+			padding: 10px;
+		}
+	}
+	
+	.panel-body {
+		padding: 1rem;
+		
+		.nav-pills > li > a {
+			border-radius: 0;
+		}
+	}
+}
+
