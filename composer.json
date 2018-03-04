@@ -3,14 +3,19 @@
 	"description": "",
 	"type": "library",
 	"license": "MIT",
-
+	
+	"homepage": "https://hermajan.net/booty",
+	"support": {
+		"issues": "https://github.com/hermajan/booty/issues"
+	},
+	
 	"config": {
 		"vendor-dir": "vendor",
 		"preferred-install": "dist",
 		"sort-packages": true,
 		"optimize-autoloader": true
 	},
-
+	
 	"require": {
 		"php": "^7.0"
 	},

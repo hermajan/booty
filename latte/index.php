@@ -18,11 +18,9 @@ $parameters = [
 	"headTag" => "",
 	"searchForm" => "",
 	
-	"menuExists" => true,
 	"menuFile" => "#menu.latte",
 	
-	"footerFile" => "#footer.latte",
-	"footerContent" => ""
+	"footerFile" => "#footer.latte"
 ];
 
 $latte->render("default.latte", $parameters);

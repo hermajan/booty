@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<header id="header" class="navbar navbar-default navbar-static-top navbar-inverse">
+	<header id="header" class="navbar navbar-default navbar-static-top navbar-inverse" n:ifset="$headerFile">
 		<div class="container-fluid">
 			{include $headerFile}
 		</div>
@@ -31,21 +31,19 @@
 	<main id="main">
 		<div class="container-fluid">
 			<div class="row">
-			{if $menuExists}
+			{ifset $menuFile}
 				{var $cols = "col-sm-8 col-md-9 col-lg-10"}
 			{else}
 				{var $cols = ""}
-			{/if}
+			{/ifset}
 			
 				<article class="col-xs-12 {$cols}" id="content">
 					{block #content}{/block}
 				</article>
-			
-			{if $menuExists}
-				<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-print" id="menu">
+				
+				<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-print" id="menu" n:ifset="$menuFile">
 					{include $menuFile}
 				</aside>
-			{/if}
 				
 				<footer class="col-xs-12">
 					{block #content-footer}{/block}
@@ -54,7 +52,7 @@
 		</div>
 	</main>
 	
-	<footer id="footer">
+	<footer id="footer" n:ifset="$footerFile">
 		<div class="container-fluid">
 			{include $footerFile}
 		</div>

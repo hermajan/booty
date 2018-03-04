@@ -1,11 +1,22 @@
 {
-  "name": "@hermajan/booty",
-  "dependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.3",
-    "bootstrap": "3",
-    "jquery": "^3.3.1"
-  },
-  "scripts": {
-    "postinstall": "yarn autoclean --force"
-  }
+	"name": "@hermajan/booty",
+	"description": "Bootstrap template for websites.",
+	"license": "MIT",
+	
+	"homepage": "https://hermajan.net/booty",
+	"bugs": "https://github.com/hermajan/booty/issues",
+	"repository": {
+		"url": "https://github.com/hermajan/booty",
+		"type": "git"
+	},
+	
+	"dependencies": {
+		"@fortawesome/fontawesome-free-webfonts": "^1.0.3",
+		"bootstrap": "3",
+		"jquery": "^3.3.1"
+	},
+	
+	"scripts": {
+		"postinstall": "yarn autoclean --force"
+	}
 }
