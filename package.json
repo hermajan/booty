@@ -17,6 +17,8 @@
 	},
 	
 	"scripts": {
-		"postinstall": "yarn autoclean --force"
+		"postinstall": "yarn autoclean --force",
+		"sass": "sass scss:css",
+		"watch": "sass --watch scss:css"
 	}
 }

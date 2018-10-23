@@ -1,10 +1,10 @@
 $fa-font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
 
-$width-align: 4rem;
+$width-align: 4rem !default;
 
-$height-header: 50px;
-$height-footer: 40px;
+$height-header: 50px !default;
+$height-footer: 40px !default;
 
-$color-primary: #b00071;
-$color-secondary: #912a7e;
-$color-text-light: whitesmoke;
+$color-primary: #b00071 !default;
+$color-secondary: #912a7e !default;
+$color-text-light: whitesmoke !default;
