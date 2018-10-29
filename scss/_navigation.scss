@@ -2,58 +2,60 @@
 .navbar {
 	min-height: $height-header;
 	margin-bottom: 0;
+	padding: 0;
 	
-	.nav > li > a {
-		padding: 15px 10px;
+	.container, .container-fluid, .navbar-collapse, .navbar-nav, .nav-item, .nav-link {
+		min-height: $height-header;
 	}
-}
-
-.navbar-brand {
-	padding: 10px 15px;
 	
-	& > img {
-		display: inline;
+	.navbar-collapse {
+		justify-content: space-between;
+	}
+	
+	.navbar-brand {
+		& > img {
+			display: inline;
+			
+			&.logo {
+				height: 32px;
+			}
+		}
+	}
+	
+	.navbar-nav {
+		align-items: center;
 		
-		&.logo {
-			height: 32px;
+		.nav-link {
+			display: flex;
+			align-items: center;
 		}
 	}
 }
 
 
 /* Menu */
-#menu { 
-	padding: 10px 0 0 0;
+#menu {
+	padding: 1rem 0 0 0;
 	
-	.nav {
-		max-width: 300px;
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
 		
-		& li a {
-			padding: 1rem;
+		a {
+			padding: 0.5em;
 		}
 	}
 	
-	.nav-stacked > li+li {
-		margin-top: 0;
-	}
-	
-	ul.inside {
-		margin-left: 2rem;
-	}
-	
-	.panel-heading {
-		padding: 10px 0;
+	.card-body {
+		padding: 0.5em;
 		
-		& a {
-			padding: 10px;
+		.list-group-item {
+			border: 0;
 		}
-	}
-	
-	.panel-body {
-		padding: 1rem;
 		
-		.nav-pills > li > a {
-			border-radius: 0;
+		.inside {
+			padding-left: 1em;
 		}
 	}
 }
