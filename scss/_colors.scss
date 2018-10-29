@@ -1,10 +1,14 @@
 /* Navbar */
-.navbar-inverse {
+.navbar {
 	background-color: $color-primary;
 	border-color: $color-primary;
 	
-	& .navbar-nav {
-		& > li > a {
+	.navbar-brand {
+		color: $color-text-light;
+	}
+	
+	.navbar-nav {
+		.nav-link {
 			color: $color-text-light;
 			
 			&:focus, &:hover {
@@ -17,7 +21,7 @@
 			}
 		}
 		
-		& > .active > a {
+		& > .active > .nav-link {
 			background-color: $color-secondary;
 			
 			&:hover {
@@ -28,14 +32,10 @@
 	}
 }
 
-.navbar-brand {
-	color: $color-text-light!important;
-}
-
 
 /* Menu */
 #menu {
-	& .panel-heading {
+	& .card-header {
 		border-color: $color-primary;
 		
 		&, & a {
@@ -53,11 +53,11 @@
 		}
 	}
 	
-	& .panel, & .nav > li > a {
+	& .card, & .nav > li > a {
 		border-color: $color-primary;
 	}
 	
-	& .panel-body {
+	& .card-body {
 		& li.active > a {
 			background-color: $color-secondary;
 			color: $color-text-light;

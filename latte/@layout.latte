@@ -14,15 +14,10 @@
 	<link rel="stylesheet" media="screen" href="{$basePath}/css/libraries.css">
 	<link rel="stylesheet" media="screen" href="{$basePath}/css/booty.css">
 	{*<link rel="stylesheet" media="print" href="{$basePath}/css/print.css">*}
-	
-	<script src="{$basePath}/node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="{$basePath}/js/booty.js"></script>
-	
-	{block #headTag}{/block}
 </head>
 
 <body>
-	<header id="header" class="navbar navbar-default navbar-static-top navbar-inverse" n:ifset="$headerFile">
+	<header id="header" class="navbar navbar-dark navbar-expand-md" n:ifset="$headerFile">
 		<div class="container-fluid">
 			{include $headerFile}
 		</div>
@@ -37,17 +32,13 @@
 				{var $cols = ""}
 			{/ifset}
 			
-				<article class="col-xs-12 {$cols}" id="content">
+				<article class="col-12 {$cols}" id="content">
 					{block #content}{/block}
 				</article>
 				
-				<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-print" id="menu" n:ifset="$menuFile">
+				<aside class="col-12 col-sm-4 col-md-3 col-lg-2 d-print-none" id="menu" n:ifset="$menuFile">
 					{include $menuFile}
 				</aside>
-				
-				<footer class="col-xs-12">
-					{block #content-footer}{/block}
-				</footer>
 			</div>
 		</div>
 	</main>
@@ -58,6 +49,9 @@
 		</div>
 	</footer>
 	
+	<script src="{$basePath}/node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="{$basePath}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="{$basePath}/js/booty.js"></script>
+	{include #scripts}
 </body>
 </html>

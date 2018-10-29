@@ -4,12 +4,13 @@
 
 html, body {
 	height: 100%;
+	font-size: 15px;
 }
 
 .container-fluid {
-	margin: 0 $width-align/2;
+	padding: 0 $width-align/2;
 	@media(min-width: 1000px) {
-		margin: 0 $width-align;
+		padding: 0 $width-align;
 	}
 }
 
@@ -55,29 +56,38 @@ iframe {
 }
 
 
-/* Bootstrap Panels */
-.panel {
+/* Bootstrap cards */
+.card {
 	margin-bottom: 0;
-}
-.panel-heading {
-	cursor: pointer;
 	
-	.toggle {
-		font-family: $fa-font-family, serif;
-		font-weight: 900;
+	.card-header {
+		cursor: pointer;
 		
-		&:after {
-			content: "\f078"; /* symbol for "opening" panels */
+		.toggle {
+			font-family: $fa-font-family, serif;
+			font-weight: 600;
+			
+			&:after {
+				content: "\f078"; /* symbol for "opening" cards */
+			}
+		}
+		
+		&.collapsed .toggle:after {
+			content: "\f054"; /* symbol for "collapsed" cards */
+		}
+		
+		.card-title img {
+			height: 24px;
 		}
 	}
-	
-	&.collapsed .toggle:after {
-		content: "\f054"; /* symbol for "collapsed" panels */
-	}
-}
 
-.panel-title img {
-	height: 24px;
+	.card-body {
+		padding: 1rem;
+
+		p {
+			margin: 0;
+		}
+	}
 }
 
 
@@ -99,6 +109,6 @@ iframe {
 	height: $height-footer;
 	
 	& > .container-fluid {
-		padding: 10px 15px 0;
+		padding-top: 1rem;
 	}
 }
