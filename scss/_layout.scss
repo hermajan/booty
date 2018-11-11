@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+	font-size: 15px;
+}
+
+.container-fluid {
+	padding: 0 $width-align/2;
+	@media(min-width: 1000px) {
+		padding: 0 $width-align;
+	}
+}
+
+
+/* Wrapper for page content to push down footer */
+#main {
+	min-height: calc(100% - #{$height-header});
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto calc(-#{$height-footer});
+	/* Pad bottom by footer height */
+	padding: 0 0 calc(#{$height-footer} + 1rem);
+	
+	article#content {
+		padding-right: $width-align/2;
+		
+		@media(min-width: 1000px) {
+			padding-right: $width-align;
+		}
+	}
+}
+
+
+#footer {
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: $height-footer;
+	background-color: $color-primary;
+	
+	& > .container-fluid {
+		padding-top: 1rem;
+	}
+}

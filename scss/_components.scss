@@ -1,0 +1,40 @@
+/* Bootstrap cards */
+.card {
+	margin-bottom: 0;
+	
+	.card-header {
+		cursor: pointer;
+		
+		.toggle:after {
+			font-family: $fa-font-family, serif;
+			font-weight: 600;
+			content: "\f078"; /* symbol for "opening" cards */
+		}
+		
+		&.collapsed .toggle:after {
+			content: "\f054"; /* symbol for "collapsed" cards */
+		}
+		
+		.card-title img {
+			height: 24px;
+		}
+	}
+	
+	.card-body {
+		padding: 1rem;
+		
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.btn-primary {
+	background-color: $color-primary;
+	border-color: $color-primary;
+	
+	&:hover {
+		background-color: $color-secondary;
+		border-color: $color-secondary;
+	}
+}
