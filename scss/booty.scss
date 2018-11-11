@@ -1,39 +1,10 @@
 @import "variables";
+@import "elements";
+@import "components";
+@import "layout";
 @import "navigation";
-@import "colors";
-
-html, body {
-	height: 100%;
-	font-size: 15px;
-}
-
-.container-fluid {
-	padding: 0 $width-align/2;
-	@media(min-width: 1000px) {
-		padding: 0 $width-align;
-	}
-}
 
 
-/* Wrapper for page content to push down footer */
-#main {
-	min-height: calc(100% - #{$height-header} - 1px);
-	height: auto;
-	/* Negative indent footer by its height */
-	margin: 0 auto -#{$height-footer};
-	/* Pad bottom by footer height */
-	padding: 0 0 $height-footer;
-	
-	article#content {
-		padding-right: $width-align/2;
-		
-		@media(min-width: 1000px) {
-			padding-right: $width-align;
-		}
-	}
-}
-
-/* Content */
 .page-header {
 	margin: 10px 0 5px;
 }
@@ -42,55 +13,6 @@ html, body {
 	width: 16px;
 }
 
-p {
-	text-align: justify;
-}
-
-td {
-	vertical-align: middle!important;
-}
-
-iframe {
-	width: 100%;
-	border: 0;
-}
-
-
-/* Bootstrap cards */
-.card {
-	margin-bottom: 0;
-	
-	.card-header {
-		cursor: pointer;
-		
-		.toggle {
-			font-family: $fa-font-family, serif;
-			font-weight: 600;
-			
-			&:after {
-				content: "\f078"; /* symbol for "opening" cards */
-			}
-		}
-		
-		&.collapsed .toggle:after {
-			content: "\f054"; /* symbol for "collapsed" cards */
-		}
-		
-		.card-title img {
-			height: 24px;
-		}
-	}
-
-	.card-body {
-		padding: 1rem;
-
-		p {
-			margin: 0;
-		}
-	}
-}
-
-
 /* Anchor, for permalinks on page chapters */
 .anchor, .anchor > small {
 	color: transparent;
@@ -98,17 +20,5 @@ iframe {
 	&:hover {
 		color: #777;
 		text-decoration: none;
-	}
-}
-
-
-/* Footer */
-#footer {
-	width: 100%;
-	/* Set the fixed height of the footer here */
-	height: $height-footer;
-	
-	& > .container-fluid {
-		padding-top: 1rem;
 	}
 }

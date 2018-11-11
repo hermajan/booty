@@ -1,0 +1,31 @@
+a > code {
+	color: pink !important;
+}
+
+h1, h2 {
+	margin-top: 1rem;
+}
+
+iframe {
+	width: 100%;
+	border: 0;
+}
+
+p {
+	text-align: justify;
+}
+
+table {
+	td {
+		vertical-align: middle !important;
+	}
+}
+
+ul {
+	li {
+		pre {
+			display: inline-flex;
+			margin: 0;
+		}
+	}
+}
