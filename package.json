@@ -2,23 +2,20 @@
 	"name": "@hermajan/booty",
 	"description": "Bootstrap template for websites.",
 	"license": "MIT",
-	
 	"homepage": "https://hermajan.net/booty",
 	"bugs": "https://github.com/hermajan/booty/issues",
 	"repository": {
 		"url": "https://github.com/hermajan/booty",
 		"type": "git"
 	},
-	
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.1.1",
 		"bootstrap": "^4.1.3",
 		"jquery": "^3.3.1"
 	},
-	"devDependencies": {
+	"optionalDependencies": {
 		"sass": "^1.14.3"
 	},
-	
 	"scripts": {
 		"postinstall": "yarn autoclean --force",
 		"sass": "sass scss:css",

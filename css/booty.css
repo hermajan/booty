@@ -84,8 +84,10 @@ html, body {
   /* Pad bottom by footer height */
   padding: 0 0 calc(60px + 1rem);
 }
-#main article#content {
-  padding-right: 2rem;
+@media (min-width: 576px) {
+  #main article#content {
+    padding-right: 2rem;
+  }
 }
 @media (min-width: 1000px) {
   #main article#content {
@@ -96,11 +98,15 @@ html, body {
 #footer {
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  min-height: 60px;
   background-color: #b00071;
+  color: whitesmoke;
 }
 #footer > .container-fluid {
   padding-top: 1rem;
+}
+#footer a {
+  color: whitesmoke;
 }
 
 .navbar {
@@ -112,6 +118,39 @@ html, body {
 }
 .navbar .container, .navbar .container-fluid, .navbar .navbar-collapse, .navbar .navbar-nav, .navbar .nav-item, .navbar .nav-link {
   min-height: 50px;
+}
+.navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-header {
+    width: 100%;
+    margin: 0 2rem;
+  }
+}
+.navbar .navbar-header .navbar-toggler {
+  float: right;
+  margin: auto 0;
+  color: whitesmoke;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar .navbar-header .navbar-toggler .navbar-toggler-icon {
+  background: none;
+  height: auto;
+  vertical-align: inherit;
+}
+.navbar .navbar-header .navbar-toggler .navbar-toggler-icon:after {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", serif;
+  font-weight: 600;
+  content: "";
+  /* symbol (times) for "opening" navbar menu */
+  vertical-align: middle;
+  font-size: 1em;
+}
+.navbar .navbar-header .navbar-toggler.collapsed .navbar-toggler-icon:after {
+  content: "";
+  /* symbol (bars) for "collapsed" navbar menu */
 }
 .navbar .navbar-collapse {
   justify-content: space-between;
@@ -128,9 +167,15 @@ html, body {
 .navbar .navbar-nav {
   align-items: center;
 }
+@media (max-width: 767px) {
+  .navbar .navbar-nav .nav-item {
+    min-width: 50%;
+  }
+}
 .navbar .navbar-nav .nav-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: whitesmoke;
 }
 .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover {
@@ -149,7 +194,12 @@ html, body {
 }
 
 .menu, #menu {
-  padding: 1rem 0 0 0;
+  padding: 1rem 1rem 0 1rem;
+}
+@media (min-width: 576px) {
+  .menu, #menu {
+    padding: 1rem 1rem 0 0;
+  }
 }
 .menu .card, .menu .nav > li > a, #menu .card, #menu .nav > li > a {
   border-color: #b00071;

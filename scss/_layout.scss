@@ -21,7 +21,9 @@ html, body {
 	padding: 0 0 calc(#{$height-footer} + 1rem);
 	
 	article#content {
-		padding-right: $width-align/2;
+		@media(min-width: 576px) {
+			padding-right: $width-align/2;
+		}
 		
 		@media(min-width: 1000px) {
 			padding-right: $width-align;
@@ -33,10 +35,15 @@ html, body {
 #footer {
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: $height-footer;
+	min-height: $height-footer;
 	background-color: $color-primary;
+	color: whitesmoke;
 	
 	& > .container-fluid {
 		padding-top: 1rem;
+	}
+	
+	a {
+		color: whitesmoke;
 	}
 }
