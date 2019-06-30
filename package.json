@@ -2,7 +2,7 @@
 	"name": "@hermajan/booty",
 	"description": "Bootstrap template for websites.",
 	"license": "MIT",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"homepage": "https://hermajan.net/booty",
 	"bugs": "https://github.com/hermajan/booty/issues",
 	"repository": {
@@ -18,7 +18,6 @@
 		"sass": "^1.14.3"
 	},
 	"scripts": {
-		"postinstall": "yarn autoclean --force",
 		"sass": "sass scss:css",
 		"watch": "sass --watch scss:css"
 	}
