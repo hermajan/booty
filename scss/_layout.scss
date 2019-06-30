@@ -19,16 +19,6 @@ html, body {
 	margin: 0 auto calc(-#{$height-footer});
 	/* Pad bottom by footer height */
 	padding: 0 0 calc(#{$height-footer} + 1rem);
-	
-	article#content {
-		@media(min-width: 576px) {
-			padding-right: $width-align/2;
-		}
-		
-		@media(min-width: 1000px) {
-			padding-right: $width-align;
-		}
-	}
 }
 
 
