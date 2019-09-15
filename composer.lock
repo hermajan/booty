@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "4077c961ab827a18e2386fffe8a0f212",
@@ -9,28 +9,28 @@
     "packages-dev": [
         {
             "name": "latte/latte",
-            "version": "v2.4.7",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "f989b018ec12f9492132515cd47f83f98429c513"
+                "reference": "c41020789756c044deb4d5d535855405c421ad08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/f989b018ec12f9492132515cd47f83f98429c513",
-                "reference": "f989b018ec12f9492132515cd47f83f98429c513",
+                "url": "https://api.github.com/repos/nette/latte/zipball/c41020789756c044deb4d5d535855405c421ad08",
+                "reference": "c41020789756c044deb4d5d535855405c421ad08",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=5.4.4"
+                "php": ">=7.1"
             },
             "conflict": {
                 "nette/application": "<2.4.1"
             },
             "require-dev": {
-                "nette/tester": "~1.7",
+                "nette/tester": "~2.0",
                 "tracy/tracy": "^2.3"
             },
             "suggest": {
@@ -41,7 +41,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -77,7 +77,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2018-02-06T14:42:33+00:00"
+            "time": "2019-07-16T16:19:33+00:00"
         }
     ],
     "aliases": [],

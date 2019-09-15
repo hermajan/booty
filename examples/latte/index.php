@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__."/../vendor/autoload.php";
+require_once __DIR__."/../../vendor/autoload.php";
 
 $latte = new \Latte\Engine;
 $latte->setTempDirectory(__DIR__."/../.temp");
 
 $parameters = [
-	"basePath" => dirname($_SERVER["SCRIPT_NAME"])."/..",
+	"basePath" => dirname($_SERVER["SCRIPT_NAME"])."/../..",
 	
 	"webName" => "Booty",
 	"color" => "#b00071",

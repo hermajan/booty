@@ -3,6 +3,6 @@ Booty is a template for websites. It is made with [Bootstrap](https://getbootstr
 
 ## Usage
 Install this via:
-* [Composer](https://getcomposer.org) - `composer require hermajan/booty:dev-master`
-* [npm](https://www.npmjs.com) - `npm install github:hermajan/booty`
+* [Composer](https://getcomposer.org) - `composer require hermajan/booty`
+* [npm](https://www.npmjs.com) - `npm install @hermajan/booty` 
 * [yarn](https://yarnpkg.com) - `yarn add https://github.com/hermajan/booty`
