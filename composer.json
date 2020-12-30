@@ -16,10 +16,8 @@
 		"optimize-autoloader": true
 	},
 	
-	"require": {
-		"php": "^7.0"
-	},
 	"require-dev": {
-		"latte/latte": "^2.4"
+		"php": ">=7.1",
+		"latte/latte": "^2.9"
 	}
 }
