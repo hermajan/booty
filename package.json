@@ -10,9 +10,9 @@
 		"type": "git"
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^5.1.1",
-		"bootstrap": "^4.3.1",
-		"jquery": "^3.4.0"
+		"@fortawesome/fontawesome-free": "^5.15.3",
+		"bootstrap": "^4.6.0",
+		"jquery": "^3.6.0"
 	},
 	"optionalDependencies": {
 		"sass": "^1.14.3"
