@@ -15,7 +15,6 @@
 		
 		@media(max-width: 767px) {
 			width: 100%;
-			margin: 0 $width-align/2;
 		}
 		
 		.navbar-toggler {
@@ -31,16 +30,16 @@
 			}
 			
 			.navbar-toggler-icon:after {
-				font-family: $fa-font-family, serif;
+				font-family: $bi-font-family;
 				font-weight: 600;
-				content: "\f00d"; /* symbol (times) for "opening" navbar menu */
+				content: "\f659"; /* symbol (X) for "opening" navbar menu */
 				
 				vertical-align: middle;
-				font-size: 1em;
+				font-size: 1.5rem;
 			}
 			
 			&.collapsed .navbar-toggler-icon:after {
-				content: "\f0c9"; /* symbol (bars) for "collapsed" navbar menu */
+				content: "\f479"; /* symbol (bars) for "collapsed" navbar menu */
 			}
 		}
 	}
@@ -51,6 +50,8 @@
 	
 	.navbar-brand {
 		color: $color-text-light;
+		display: flex;
+		align-items: center;
 		
 		& > img {
 			display: inline;
@@ -99,12 +100,6 @@
 
 
 .menu, #menu {
-	padding: 1rem 1rem 0 1rem;
-	
-	@media(min-width: 576px) {
-		padding: 1rem 1rem 0 0;
-	}
-	
 	& .card, & .nav > li > a {
 		border-color: $color-primary;
 	}
@@ -129,15 +124,18 @@
 			color: $color-secondary;
 		}
 		
-		a {
+		a, span {
 			padding: 0.5em;
 		}
 	}
 	
 	.card-body {
 		padding: 0.5em;
-		
+	}
+	
+	.list-group {
 		.list-group-item {
+			padding: 0.8rem 1rem;
 			border: 0;
 		}
 		

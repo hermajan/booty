@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "latte/latte",
-            "version": "v2.9.2",
+            "version": "v2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "f66806cb6dff34ae536348524bb20965f74766fe"
+                "reference": "dd2c58863e830c22a2c6b85af63f37b829d255df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/f66806cb6dff34ae536348524bb20965f74766fe",
-                "reference": "f66806cb6dff34ae536348524bb20965f74766fe",
+                "url": "https://api.github.com/repos/nette/latte/zipball/dd2c58863e830c22a2c6b85af63f37b829d255df",
+                "reference": "dd2c58863e830c22a2c6b85af63f37b829d255df",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.9-dev"
+                    "dev-master": "2.10-dev"
                 }
             },
             "autoload": {
@@ -84,9 +84,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/latte/issues",
-                "source": "https://github.com/nette/latte/tree/v2.9.2"
+                "source": "https://github.com/nette/latte/tree/v2.10.3"
             },
-            "time": "2020-12-16T23:52:58+00:00"
+            "time": "2021-02-22T11:17:13+00:00"
         }
     ],
     "aliases": [],

@@ -3,16 +3,18 @@
 	margin-bottom: 0;
 	
 	.card-header {
-		cursor: pointer;
+		&[data-bs-toggle="collapse"] {
+			cursor: pointer;
+		}
 		
 		.toggle:after {
-			font-family: $fa-font-family, serif;
+			font-family: $bi-font-family;
 			font-weight: 600;
-			content: "\f078"; /* symbol for "opening" cards */
+			content: "\f282"; /* symbol for "opening" cards */
 		}
 		
 		&.collapsed .toggle:after {
-			content: "\f054"; /* symbol for "collapsed" cards */
+			content: "\f285"; /* symbol for "collapsed" cards */
 		}
 		
 		.card-title img {
@@ -36,5 +38,15 @@
 	&:hover {
 		background-color: $color-secondary;
 		border-color: $color-secondary;
+	}
+}
+
+.jumbotron {
+	width: 100%;
+	margin: 0;
+	padding: 2rem 0;
+	
+	h1 + p, h2 + p, h3 + p, h4 + p {
+		margin-top: 1rem !important;
 	}
 }

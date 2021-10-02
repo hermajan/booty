@@ -17,22 +17,20 @@
 </head>
 
 <body>
-<header id="header" class="navbar navbar-dark navbar-expand-md">
+<header id="navbar" class="navbar navbar-dark navbar-expand-md">
 	<div class="container-fluid">
 		<nav class="navbar-header">
 			<a href="./index.html" class="navbar-brand">
 				<img src="../favicon.ico" class="logo" alt="logo"> Booty
 			</a>
-			
-			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			<button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		</nav>
-		
-		<nav class="collapse navbar-collapse">
+		<nav class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav">
 				<li id="default-navbar" class="nav-item">
-					<a href="./index.html" class="nav-link"><i class="fas fa-home fa-lg"></i></a>
+					<a href="./index.html" class="nav-link"><i class="bi bi-house-door-fill" style="font-size: 1.2rem;"></i></a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">First</a>
@@ -54,8 +52,15 @@
 <main id="main">
 	<div class="container-fluid">
 		<div class="row">
+			<header class="col-12" id="header">
+				<div class="jumbotron">
+					<h1 class="page-header display-4">Booty</h1>
+					<p class="lead" id="perex">Template for websites.</p>
+				</div>
+			</header>
+		</div>
+		<div class="row">
 			<article class="col-12 col-sm-8 col-md-9 col-lg-10" id="content">
-				<h1 class="page-header">Booty</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus metus justo, sed iaculis urna rutrum ac. Sed rutrum, velit sit amet semper aliquam, libero quam pharetra orci,
 					sed pretium quam ligula nec eros. Maecenas nisl mauris, varius nec dui sit amet, volutpat laoreet sapien. Morbi quis dapibus dolor. Ut pulvinar ipsum a nulla tristique placerat. Ut
 					ac magna sapien. Mauris metus augue, scelerisque ac viverra in, dignissim vel urna. Aliquam vel imperdiet diam. Proin vitae enim sit amet mauris adipiscing mattis. Quisque pulvinar
@@ -117,12 +122,12 @@
 				</p>
 				
 				<section class="card">
-					<header title="Show" class="card-header collapsed" data-toggle="collapse" data-target="#card">
-						<nav class="float-right toggle"></nav>
+					<header title="Show" class="card-header collapsed" data-bs-toggle="collapse" data-bs-target="#card" aria-expanded="false">
+						<nav class="float-end toggle"></nav>
 						<span class="card-title">Example of panel</span>
 					</header>
 					
-					<div id="card" class="collapse show">
+					<div id="card" class="collapse">
 						<article class="card-body">
 							<p>Content of panel.</p>
 						</article>
@@ -173,7 +178,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-4">
-				<p class="text-left"><a href="#">left</a></p>
+				<p class="text-start"><a href="#">left</a></p>
 			</div>
 			
 			<div class="col-md-4">
@@ -181,14 +186,13 @@
 			</div>
 			
 			<div class="col-md-4">
-				<p class="text-right"><a href="#">right</a></p>
+				<p class="text-end"><a href="#">right</a></p>
 			</div>
 		</div>
 	</div>
 </footer>
 
-<script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="../js/booty.js"></script>
 </body>
 </html>

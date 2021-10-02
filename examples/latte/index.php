@@ -1,7 +1,9 @@
 <?php
+use Latte\Engine;
+
 require_once __DIR__."/../../vendor/autoload.php";
 
-$latte = new \Latte\Engine;
+$latte = new Engine;
 $latte->setTempDirectory(__DIR__."/../.temp");
 
 $parameters = [
@@ -14,7 +16,7 @@ $parameters = [
 	"robots" => "",
 	"title" => "Booty",
 	
-	"headerFile" => "#header.latte",
+	"navbarFile" => "#navbar.latte",
 	"headTag" => "",
 	"searchForm" => "",
 	

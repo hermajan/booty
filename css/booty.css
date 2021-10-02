@@ -29,17 +29,17 @@ ul li pre {
 .card {
   margin-bottom: 0;
 }
-.card .card-header {
+.card .card-header[data-bs-toggle=collapse] {
   cursor: pointer;
 }
 .card .card-header .toggle:after {
-  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", serif;
+  font-family: bootstrap-icons, serif;
   font-weight: 600;
-  content: "";
+  content: "";
   /* symbol for "opening" cards */
 }
 .card .card-header.collapsed .toggle:after {
-  content: "";
+  content: "";
   /* symbol for "collapsed" cards */
 }
 .card .card-header .card-title img {
@@ -59,6 +59,15 @@ ul li pre {
 .btn-primary:hover {
   background-color: #912a7e;
   border-color: #912a7e;
+}
+
+.jumbotron {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+}
+.jumbotron h1 + p, .jumbotron h2 + p, .jumbotron h3 + p, .jumbotron h4 + p {
+  margin-top: 1rem !important;
 }
 
 html, body {
@@ -116,7 +125,6 @@ html, body {
 @media (max-width: 767px) {
   .navbar .navbar-header {
     width: 100%;
-    margin: 0 2rem;
   }
 }
 .navbar .navbar-header .navbar-toggler {
@@ -131,15 +139,15 @@ html, body {
   vertical-align: inherit;
 }
 .navbar .navbar-header .navbar-toggler .navbar-toggler-icon:after {
-  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", serif;
+  font-family: bootstrap-icons, serif;
   font-weight: 600;
-  content: "";
-  /* symbol (times) for "opening" navbar menu */
+  content: "";
+  /* symbol (X) for "opening" navbar menu */
   vertical-align: middle;
-  font-size: 1em;
+  font-size: 1.5rem;
 }
 .navbar .navbar-header .navbar-toggler.collapsed .navbar-toggler-icon:after {
-  content: "";
+  content: "";
   /* symbol (bars) for "collapsed" navbar menu */
 }
 .navbar .navbar-collapse {
@@ -147,6 +155,8 @@ html, body {
 }
 .navbar .navbar-brand {
   color: whitesmoke;
+  display: flex;
+  align-items: center;
 }
 .navbar .navbar-brand > img {
   display: inline;
@@ -183,14 +193,6 @@ html, body {
   color: #912a7e;
 }
 
-.menu, #menu {
-  padding: 1rem 1rem 0 1rem;
-}
-@media (min-width: 576px) {
-  .menu, #menu {
-    padding: 1rem 1rem 0 0;
-  }
-}
 .menu .card, .menu .nav > li > a, #menu .card, #menu .nav > li > a {
   border-color: #b00071;
 }
@@ -211,19 +213,20 @@ html, body {
   background-color: whitesmoke;
   color: #912a7e;
 }
-.menu .card-header a, #menu .card-header a {
+.menu .card-header a, .menu .card-header span, #menu .card-header a, #menu .card-header span {
   padding: 0.5em;
 }
 .menu .card-body, #menu .card-body {
   padding: 0.5em;
 }
-.menu .card-body .list-group-item, #menu .card-body .list-group-item {
+.menu .list-group .list-group-item, #menu .list-group .list-group-item {
+  padding: 0.8rem 1rem;
   border: 0;
 }
-.menu .card-body .inside, #menu .card-body .inside {
+.menu .list-group .inside, #menu .list-group .inside {
   padding-left: 1em;
 }
-.menu .card-body a:hover, .menu .card-body li.active > a:hover, #menu .card-body a:hover, #menu .card-body li.active > a:hover {
+.menu .list-group a:hover, .menu .list-group li.active > a:hover, #menu .list-group a:hover, #menu .list-group li.active > a:hover {
   background-color: #b00071;
   color: whitesmoke;
 }
