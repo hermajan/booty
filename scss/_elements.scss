@@ -1,5 +1,13 @@
-a > code {
-	color: pink !important;
+a {
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+	
+	& > code {
+		color: brown !important;
+	}
 }
 
 h1, h2 {
