@@ -2,7 +2,7 @@
 	"name": "@hermajan/booty",
 	"description": "Bootstrap template for websites.",
 	"license": "MIT",
-	"version": "0.3.1",
+	"version": "0.4.0",
 	"homepage": "https://hermajan.net/booty",
 	"bugs": "https://github.com/hermajan/booty/issues",
 	"repository": {
@@ -10,8 +10,8 @@
 		"type": "git"
 	},
 	"dependencies": {
-		"bootstrap": "^5.1.1",
-		"bootstrap-icons": "^1.5.0"
+		"bootstrap": "^5.2.3",
+		"bootstrap-icons": "^1.10.3"
 	},
 	"devDependencies": {
 		"sass": "^1.14.3"
