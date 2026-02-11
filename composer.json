@@ -1,23 +1,23 @@
 {
 	"name": "hermajan/booty",
-	"description": "",
+	"description": "Bootstrap template for websites.",
 	"type": "library",
 	"license": "MIT",
-	
 	"homepage": "https://hermajan.net/booty",
 	"support": {
 		"issues": "https://github.com/hermajan/booty/issues"
 	},
-	
 	"config": {
 		"vendor-dir": "vendor",
 		"preferred-install": "dist",
 		"sort-packages": true,
 		"optimize-autoloader": true
 	},
-	
-	"require-dev": {
-		"php": ">=7.1",
-		"latte/latte": "^2.9"
+	"suggest": {
+		"latte/latte": "For using Latte examples of template"
+	},
+	"require": {
+		"twbs/bootstrap": "^5.3",
+		"twbs/bootstrap-icons": "^1.13"
 	}
 }

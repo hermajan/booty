@@ -1,13 +1,5 @@
 html, body {
 	height: 100%;
-	font-size: 15px;
-}
-
-.container-fluid {
-	padding: 0 $width-align/2;
-	@media(min-width: 1000px) {
-		padding: 0 $width-align;
-	}
 }
 
 
