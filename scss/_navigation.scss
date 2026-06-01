@@ -2,8 +2,8 @@
 	min-height: $height-header;
 	margin-bottom: 0;
 	padding: 0;
-	background-color: $color-primary;
-	border-color: $color-primary;
+	background-color: $primary;
+	border-color: $primary;
 	
 	.container, .container-fluid, .navbar-collapse, .navbar-nav, .nav-item, .nav-link {
 		min-height: $height-header;
@@ -79,7 +79,7 @@
 			
 			&:focus, &:hover {
 				background-color: $color-text-light;
-				color: $color-secondary;
+				color: $secondary;
 			}
 			
 			& > i {
@@ -88,11 +88,11 @@
 		}
 		
 		& > .active > .nav-link {
-			background-color: $color-secondary;
+			background-color: $secondary;
 			
 			&:hover {
 				background-color: $color-text-light;
-				color: $color-secondary;
+				color: $secondary;
 			}
 		}
 	}
@@ -101,27 +101,27 @@
 
 .menu, #menu {
 	& .card, & .nav > li > a {
-		border-color: $color-primary;
+		border-color: $primary;
 	}
 	
 	.card-header {
 		display: flex;
 		justify-content: space-between;
 		padding: 0;
-		border-color: $color-primary;
+		border-color: $primary;
 		
 		&, & a {
-			background-color: $color-primary;
+			background-color: $primary;
 			color: $color-text-light;
 		}
 		
 		&.active, &.active > h4 > a {
-			background-color: $color-secondary;
+			background-color: $secondary;
 		}
 		
 		& a:hover, &.active > h4 > a:hover {
 			background-color: $color-text-light;
-			color: $color-secondary;
+			color: $secondary;
 		}
 		
 		a, span {
@@ -144,14 +144,14 @@
 		}
 		
 		& a:hover, & li.active > a:hover {
-			background-color: $color-primary;
+			background-color: $primary;
 			color: $color-text-light;
 		}
 	}
 	
 	& a.active {
 		font-style: italic;
-		background-color: $color-secondary;
+		background-color: $secondary;
 		color: $color-text-light;
 	}
 }

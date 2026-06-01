@@ -32,12 +32,12 @@
 }
 
 .btn-primary {
-	background-color: $color-primary;
-	border-color: $color-primary;
+	background-color: $primary;
+	border-color: $primary;
 	
 	&:hover {
-		background-color: $color-secondary;
-		border-color: $color-secondary;
+		background-color: $secondary;
+		border-color: $secondary;
 	}
 }
 

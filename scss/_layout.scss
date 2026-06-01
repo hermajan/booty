@@ -2,6 +2,65 @@ html, body {
 	height: 100%;
 }
 
+body {
+	background-color: whitesmoke;
+}
+
+#header {
+	margin-top: 1rem;
+	
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		
+		&:hover {
+			text-decoration: none;
+		}
+		
+		img {
+			max-width: 75%;
+		}
+		
+		span, i {
+			font-size: 50px;
+		}
+	}
+	
+	.block-title {
+		display: flex;
+		align-items: center;
+	}
+	
+	.page-header {
+		display: flex;
+		flex-flow: column;
+		text-align: center;
+		font-weight: bold;
+		
+		a {
+			color: $gray-600;
+		}
+		
+		.pretitle {
+			font-size: 1.5rem;
+			font-weight: lighter;
+		}
+		
+		.title {
+			font-size: 3.5rem;
+			font-weight: bold;
+			margin: 0;
+		}
+		
+		.subtitle {
+			font-size: 2rem;
+			font-style: oblique;
+			font-weight: normal;
+		}
+	}
+}
 
 /* Wrapper for page content to push down footer */
 #main {
@@ -11,6 +70,10 @@ html, body {
 	margin: 0 auto calc(-#{$height-footer});
 	/* Pad bottom by footer height */
 	padding: 0 0 calc(#{$height-footer} + 1rem);
+	
+	background-position-x: center !important;
+	background-position-y: top !important;
+	background-size: cover !important;
 }
 
 
@@ -18,7 +81,7 @@ html, body {
 	width: 100%;
 	/* Set the fixed height of the footer here */
 	min-height: $height-footer;
-	background-color: $color-primary;
+	background-color: $primary;
 	color: whitesmoke;
 	
 	& > .container-fluid {
