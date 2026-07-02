@@ -14,7 +14,8 @@
 		"optimize-autoloader": true
 	},
 	"suggest": {
-		"latte/latte": "For using Latte examples of template"
+		"latte/latte": "For using Latte examples of template",
+		"twig/twig": "For using Twig examples of template"
 	},
 	"require": {
 		"twbs/bootstrap": "^5.3",

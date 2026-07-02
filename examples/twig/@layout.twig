@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="{{ color }}">
+	<meta name="description" content="{{ description }}">
+	<meta name="author" content="{{ author }}">
+	{% if robots is defined and robots %}
+		<meta name="robots" content="{{ robots }}">
+	{% endif %}
+
+	<title>{% if title is defined and title %}{{ title }} - {% endif %}{{ webName }}</title>
+
+	<link rel="shortcut icon" href="{{ basePath }}/favicon.ico">
+	<link rel="stylesheet" media="screen" href="{{ basePath }}/css/libraries.css">
+	<link rel="stylesheet" media="screen" href="{{ basePath }}/css/booty.css">
+</head>
+
+<body>
+{% if navbarFile is defined and navbarFile %}
+<header id="header" class="navbar navbar-dark navbar-expand-md">
+	<div class="container-fluid">
+		{% include navbarFile %}
+	</div>
+</header>
+{% endif %}
+
+<main id="main">
+	<div class="container-fluid">
+		<div class="row">
+			<header class="col-12" id="header">
+				{% block header %}
+					{% if title is defined and title %}
+						<div class="jumbotron">
+							<h1 class="page-header display-4">{% block title_tag %}{{ title }}{% endblock %}</h1>
+							<div class="lead" id="perex">{% block perex %}{% endblock %}</div>
+						</div>
+					{% endif %}
+				{% endblock %}
+			</header>
+		</div>
+		<div class="row">
+			{% set cols = (menuFile is defined and menuFile) ? "col-sm-8 col-md-9 col-lg-10" : "col-12" %}
+
+			<article class="col-12 {{ cols }}" id="content">
+				{% block content %}{% endblock %}
+			</article>
+
+			{% if menuFile is defined and menuFile %}
+				<aside class="col-12 col-sm-4 col-md-3 col-lg-2 d-print-none" id="menu">
+					{% include menuFile %}
+				</aside>
+			{% endif %}
+		</div>
+	</div>
+</main>
+
+{% if footerFile is defined and footerFile %}
+<footer id="footer">
+	<div class="container-fluid">
+		{% include footerFile %}
+	</div>
+</footer>
+{% endif %}
+
+<script src="{{ basePath }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ basePath }}/js/booty.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>
