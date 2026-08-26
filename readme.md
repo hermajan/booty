@@ -3,7 +3,7 @@
 [![Packagist](https://img.shields.io/packagist/v/hermajan/booty.svg)](https://packagist.org/packages/hermajan/booty)
 [![NPM](https://img.shields.io/npm/v/@hermajan/booty.svg)](https://www.npmjs.com/package/@hermajan/booty)
 
-<p id="readme-perex">Template for websites. It is made with <a href="https://getbootstrap.com">Bootstrap</a> framework and <a href="https://icons.getbootstrap.com">its icons</a>.</p>
+<p id="readme-perex">Modern, lightweight, and highly customizable HTML/CSS/JS template for websites. It is made with <a href="https://getbootstrap.com">Bootstrap</a> framework and <a href="https://icons.getbootstrap.com">its icons</a>.</p>
 
 ## 🌟 Features
 *   **Bootstrap 5 Core:** Built on the latest Bootstrap components and utility-first approach.
@@ -14,6 +14,19 @@
 *   **Mobile First:** Fully responsive design that looks great on all devices.
 
 ## 📥 Installation
-Install this via:
-* [Composer](https://getcomposer.org) - `composer require hermajan/booty`
-* [npm](https://www.npmjs.com) - `npm install @hermajan/booty`
+You can choose your favorite package manager.
+
+### Node.js
+Install via npm to manage dependencies and use the SCSS source files in your build pipeline.
+```bash
+npm install @hermajan/booty
+```
+
+### Composer
+Install via Composer to integrate with PHP projects. It automatically pulls Bootstrap and Icons.
+```bash
+composer require hermajan/booty
+```
+
+## 📚 Documentation
+Usage and documentation for this project is in [wiki](https://github.com/hermajan/booty/wiki).
